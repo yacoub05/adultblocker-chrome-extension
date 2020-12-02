@@ -4,7 +4,7 @@ function replaceText(element) {
   if (element.hasChildNodes()) {
     element.childNodes.forEach(replaceText)
   } else if (element.nodeType === Text.TEXT_NODE) {
-    if (element.textContent.match(/pornhub.com/gi)) {
+    if (element.textContent.match(/porn/gi)) {
     element.parentElement.remove()
     }
   }
